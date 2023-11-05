@@ -1,0 +1,48 @@
+.conversation-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+  background: #fff;
+}
+
+ul>i {
+  font-size: 19px;
+}
+
+.tab-container {
+  width: 300px;
+  padding: 5px;
+  margin: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+}
+
+.tab {
+  border: 1px solid gray;
+  flex-grow: 1;
+  font-size: 13px;
+  background-color: white;
+}
+
+.tab:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.tab:last-child {
+  border-radius: 0px 5px 5px 0px;
+}
+
+.tab:focus {
+  background-color: gray;
+  color: white;
+}
+
+.tab:first-child:active {
+  background-color: gray
+}

@@ -1,0 +1,67 @@
+.find-container {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    flex-basis: auto;
+    background-color: white;
+}
+
+@supports (backdrop-filter: blur(20px)) {
+    .find-container {
+        border: none;
+        background-color: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(20px);
+    }
+}
+
+.finds {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: auto;
+    margin: 0px 15px 0px 15px;
+}
+
+.finds input {
+    flex-grow: 3;
+    height: 40px;
+    border: none;
+    background-color: #f3f3f5;
+    border-radius: 5px;
+}
+
+.finds input:focus {
+    border: solid 1px blue;
+
+}
+
+.finds .up {
+    background-color: white;
+    color: #d0d0d7;
+    border: none;
+    margin: 10px;
+}
+
+.finds .down {
+    background-color: white;
+    color: #d0d0d7;
+    border: none;
+    margin: 10px;
+}
+
+.finds .cancel {
+    background-color: #f3f3f5;
+    border: none;
+    margin: 10px;
+    font-weight: 500;
+    padding: 3px;
+}
+
+.finds .cancel:hover {
+    background-color: #d0d0d7;
+}

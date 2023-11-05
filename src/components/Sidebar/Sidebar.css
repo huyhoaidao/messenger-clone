@@ -1,0 +1,394 @@
+hr {
+    background-color: gray;
+    font-weight: 100;
+}
+
+.menuBar ul {
+    margin-top: 5px;
+    padding: 5px;
+    height: 98%;
+    position: relative;
+    margin: 0px;
+}
+
+.menuBar li {
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+}
+
+.menuBar li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 19px;
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.menuBar li a:hover,
+a:focus {
+    background-color: #ddd;
+}
+
+
+.menuBar li:last-child {
+    position: absolute;
+    bottom: 0px;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+}
+
+.menuBar li:last-child a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 19px;
+    padding: 0px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.UserMenu {
+    position: absolute;
+    bottom: 60px;
+    width: 150px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.UserMenu:hover {
+    background-color: #dfdfeb;
+}
+
+
+.photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* --------------------------------------------------------------------- */
+
+/* modal */
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    max-width: 690px;
+    height: 590px;
+    display: flex;
+    flex-direction: row;
+}
+
+.modal-content>div {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    flex: 1;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    top: 0px;
+}
+
+.modal-menu-item {
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    padding-left: 10px;
+}
+
+.modal-menu-item:hover {
+    background-color: #dfdfeb;
+}
+
+.modal-menu-item>span {
+    margin-left: 10px;
+}
+
+.modal-menu>span {
+    color: #65676b;
+    font-size: 14px;
+    display: flex;
+    padding-left: 15px;
+}
+
+.modal-general-detail {
+    text-align: left;
+    margin: 55px 5px 20px 5px;
+}
+
+.modal-photo-general {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Notifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Appearance {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Language {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(1, 162, 255);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Logins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Security {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Logout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Report {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Help {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(1, 162, 255);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+.modal-photo-Legal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(235, 99, 99, 0.849);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+}
+
+/* nút button On Off */
+.toggle-button {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    outline: none;
+    cursor: pointer;
+}
+
+.toggle-indicator {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 13px;
+    height: 13px;
+    background-color: #928787;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.toggle-button.on .toggle-indicator {
+    transform: translateX(20px);
+    background-color: white;
+}
+
+.toggle-button.on {
+    background-color: blue;
+}
+
+/* logout */
+.logout-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.logout-modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+.logout-modal-content>div {
+    flex-grow: 1;
+
+}
+
+.logout-modal-content>div:first-child {
+    padding: 20px 10px 0px 10px;
+}
+
+.logout-modal-content>div:last-child {
+    background-color: pink;
+    border-radius: 0px 0px 8px 8px;
+    padding-top: 20px;
+}
+
+.logout-modal-content h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.logout-modal-content button:first-child {
+    background-color: blue;
+    color: #fff;
+    padding: 5px 30px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-modal-content button:first-child:hover {
+    background-color: rgb(11, 126, 202);
+}
+
+.logout-modal-content button:last-child {
+    background-color: white;
+    color: black;
+    padding: 5px 30px;
+    margin: 5px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.logout-modal-content button:last-child:hover {
+    background-color: rgb(238, 236, 236);
+}

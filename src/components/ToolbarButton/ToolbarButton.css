@@ -1,0 +1,34 @@
+.toolbar-button-left {
+  color: black;
+  font-size: 18px;
+  transition: all 0.1s;
+}
+
+.toolbar-button-left:hover {
+  cursor: pointer;
+}
+
+.toolbar-button-left:active {
+  color: black;
+  opacity: 0.25;
+}
+
+.toolbar-button {
+  color: #007aff;
+  font-size: 18px;
+  transition: all 0.1s;
+}
+
+.toolbar-button:hover {
+  cursor: pointer;
+  color: #0063ce;
+}
+
+.toolbar-button:active {
+  color: #007aff;
+  opacity: 0.25;
+}
+
+.Toolbar {
+  flex-direction: row;
+}
